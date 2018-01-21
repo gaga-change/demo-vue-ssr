@@ -8,7 +8,10 @@ const renderer = createRenderer({
 })
 
 const context = {
-	title: 'vue-ssr'
+	title: 'vue-ssr',
+	meta: `
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	`
 }
 
 app.get('*', (req, res) => {
